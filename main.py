@@ -54,7 +54,7 @@ def algoritmoGenetico(tamanhoPopulacao, taxaMutacao, quantidadeGeracoes):
     # Imprime o valor de aptidão do melhor indivíduo da geração atual
     melhorIndividuo = max(populacao, key=calcularAptidao)
     print(
-      "Geração {}: Valor de aptidão = {} \nIndivíduo testado = {}\n".format(
+      "Geração {}: Valor de aptidão = {} \nMelhor indivíduo da população = {}\n".format(
         i + 1, calcularAptidao(melhorIndividuo), melhorIndividuo[0])
     )
   # Retorna o melhor indivíduo da população final
@@ -63,7 +63,7 @@ def algoritmoGenetico(tamanhoPopulacao, taxaMutacao, quantidadeGeracoes):
 # Define os parâmetros do algoritmo genético
 tamanhoPopulacao = 50
 taxaMutacao = 0.1
-quantidadeGeracoes = 10
+quantidadeGeracoes = 7
 
 # Executa o algoritmo genético
 melhorIndividuo = algoritmoGenetico(tamanhoPopulacao, taxaMutacao, quantidadeGeracoes)
